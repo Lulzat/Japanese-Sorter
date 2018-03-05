@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Japanese Sorting</title>
+</head>
+<body>
+    <div id='text'>
+    <h1>Japanese Characters Sorter</h1>
+    <p>This script was developed in response to an article that asserted that it was "impossible" or "overly-difficult" to alphabetize Japanese Characters. I took it as a challenge to do just that with a relatively small amount of code. While the code is unable to sort Kanji Characters, it works quite well for the Kana Characters seen here. First, view the list of names to see that they are out of any sort of order. Second, click the "Sort" button to observe that the list has now sorted the names in a way that follows traditional Japanese Kana Order.</p>
+    </div>
+    <div id='container'>
+        <button onClick="orderFunc()">Sort</button>
+        <select id = 'dropdown'>
+            <option>List...</option>
+        </select>
+    </div>
+    <!-- Style -->
+    <style>
+        body {
+            background-image: url('images/japan.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #text {
+            background-color: rgba(0, 0, 0, 0.7)
+        }
+        h1 {
+            font-size: 30px;
+            color: rgb(255,255,255);
+        }
+
+        p {
+            font-size: 25px;
+            color: rgb(255,255,255);
+        }
+        #container {
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -100px;
+        }
+        
+        button {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            border: none;
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding: 10px 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        button:hover {
+            padding: 8px 28px;
+            background-color: darkred;
+        }
+        select {
+            margin-right: 2px;
+        }
+    </style>
+    <!--js-->
+    <script src="javascript.js"></script>
+</body>
+</html>
